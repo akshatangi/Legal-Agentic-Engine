@@ -1,0 +1,52 @@
+# NYĀYA-INTELLIGENCE — Full Requirements
+# Install with: pip install -r requirements.txt
+
+# ── Core LLM + Agent Framework ──
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-openai>=0.1.0        # or langchain-anthropic / langchain-google-genai
+langgraph>=0.1.0
+
+# ── InLegalBERT / HuggingFace (Stage 02) ──
+transformers>=4.40.0
+torch>=2.0.0
+huggingface-hub>=0.23.0
+
+# ── PDF Processing (Stage 01) ──
+pdfplumber>=0.10.0
+pymupdf>=1.24.0                # fallback for scanned PDFs
+
+# ── Text Chunking ──
+langchain-text-splitters>=0.2.0
+
+# ── Verification Agent (Stage 05) ──
+rapidfuzz>=3.9.0
+
+# ── GraphRAG — Knowledge Graph (Stage 08) ──
+networkx>=3.3
+
+# ── GraphRAG — Vector Search (Stage 09) ──
+chromadb>=0.5.0
+
+# ── Structured Storage (Stage 07) ──
+# sqlite3 is built into Python — no install needed
+
+# ── Pydantic (State schemas) ──
+pydantic>=2.0.0
+
+# ── Async support ──
+asyncio                        # built-in, listed for clarity
+
+# ── Utilities ──
+python-dotenv>=1.0.0           # for OPENAI_API_KEY etc from .env
+uuid                           # built-in
+
+# ── Optional: Evaluation (add later for benchmarking) ──
+# rouge-score>=0.1.2
+# bert-score>=0.3.13
+# ragas>=0.1.0
+
+groq
+langchain-groq
+
+streamlit

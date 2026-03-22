@@ -1,0 +1,33 @@
+# Environments
+legalagentENV/
+venv/
+env/
+
+# API Keys and Secrets (CRITICAL)
+.env
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Databases and Vector Stores
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+vector_store/
+
+# Project Artifacts (Raw PDFs and Extracted Chunks)
+*.pdf
+artifact_store/
+output_jsons/
+
+# OS and IDE generated files
+.DS_Store
+.vscode/
+.idea/
+
+
+transformers 
+torch

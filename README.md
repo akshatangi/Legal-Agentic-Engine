@@ -155,9 +155,3 @@ HITL reduction over time:
 | Month 3-5 | ~20% | ~80% |
 | Month 6-7 | ~12% | ~85% |
 | Month 8+ | ~5% | 90%+ |
-
----
-
-## Interview One-Liner
-
-*"A 9-stage multi-agent pipeline for Indian court judgment analysis. Seven specialist agents extract different legal components in parallel, routed by InLegalBERT so each agent only reads relevant sections. A Critic Agent reads across all outputs to detect contradictions, flag unaddressed arguments, and adjust confidence scores based on logical consistency — not just source tracing. Outputs are gated by confidence thresholds, with a HITL loop that feeds corrections back into per-agent fine-tuning. The final layer is a GraphRAG knowledge graph enabling relationship-based legal queries no keyword system can answer."*
